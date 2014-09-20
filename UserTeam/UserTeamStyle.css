@@ -1,0 +1,104 @@
+html {
+	font-size: 17px;
+}
+
+body {
+	background-color: white;
+}
+
+h2 {
+	margin-top: 6%;
+	font-family: Futura;
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 100%;
+	text-align: center;
+	color: white;
+	text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#lettuce {
+	position: absolute;
+	top: 20%;
+	height: 6%;
+	width:50%;
+	margin-left: 25%;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+}
+
+#tomato {
+	position: absolute;
+	top: 27%;
+	height: 5%;
+	width:50%;
+	margin-left: 25%;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+
+#cheese {
+	position: absolute;
+	bottom: 25%;
+	height: 5%;
+	width:50%;
+	margin-left: 25%;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+}
+
+#logo {
+	position: absolute;
+	margin-left:25%;
+	top:35%;
+	bottom:35%;
+	width:50%;
+	height:30%;
+}
+
+img {
+	height: 100%;
+  width: 100%;
+}
+
+#header {
+	position: absolute;
+	display: block;
+	top: 5%;
+	background-color: black;
+	border-top-left-radius: 300px;
+	border-top-right-radius: 300px;
+	padding-top:1%;
+	padding-bottom: 1%;
+	height: 10%;
+	width: 50%;
+	margin-left: 25%;
+	border: 2px solid black;
+}
+
+#footer{
+	position: absolute;
+	display: block;
+	bottom: 5%;
+	border-bottom-left-radius: 300px;
+	border-bottom-right-radius: 300px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 25%;
+	height: 10%;
+	width: 50%;
+	border: 2px solid black;
+}
+
+p {
+	font-family: Verdana;
+	font-size: 1.5rem;
+	line-height: 100%;
+	text-align: center;
+	color: white;
+	text-shadow: 3px 0 black, 0 1px blue, 1px 0 blue, 0 -1px black;
+}
