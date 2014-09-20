@@ -4,8 +4,18 @@ function myFunction () {
 	alert ("cool");
 };
 
-//jquery
+//Logo Fade in on Load
+$('#logo', '#start').hide().fadeIn(2500);
 
-$( "p" ).click(function() {
-$( this ).slideUp();
-});
+//Start Button Blinking via StackOverflow
+function blink(selector){
+    $(selector).animate({opacity:0}, 50, "linear", function(){
+        $(this).delay(700);
+        $(this).animate({opacity:1}, 50, function(){
+        blink(this);
+        });
+        $(this).delay(700);
+    });
+}
+
+blink("#start");
