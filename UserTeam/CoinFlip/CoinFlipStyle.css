@@ -33,9 +33,11 @@ body {
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow: 9px 5px 5px 0px rgba(50, 50, 50, 0.7);
+	z-index: 1;
 }
 
 #tailsDiv {
+	z-index: 1;
 	position: fixed;
 	bottom: 17%;
 	height: 12%;
@@ -204,27 +206,26 @@ body {
 	font-family: Futura;
 }
 
-/* CHARGERS POPUP */
+/* Win Popup */
 #popupBG {
 	display:none;
 	height:100%;
 	width:100%;
 	position:fixed;
-	position:fixed;
+	position:absolute;
 	top:0;
 	left:0;
 	background-color: #FFB81C;
-	z-index:1;
 }
 
 #popUp {
 	display:none;
 	position:fixed;
-	position:fixed;
+	position:absolute;
 	height:50%;
 	width:40%;
 	background:#FFFFFF;
-	border:3px solid black;
+	border:3px solid green;
 	z-index:2;
 	padding:12px;
 	font-size:13px;
@@ -235,7 +236,7 @@ body {
 }
 
 #popUp h1 {
-	position: fixed;
+	position: absolute;
 	font-family: Verdana;
 	text-align: center;
 	color: black;
@@ -265,27 +266,26 @@ body {
 	margin-left: 25%;
 }
 
-/* SEAHAWKS POPUP */
+/* Lose Popup */
 #popupBG2{
 	display:none;
 	height:100%;
 	width:100%;
 	position:fixed;
-	position:fixed;
+	position:absolute;
 	top:0;
 	left:0;
 	background-color: #23DB2A;
-	z-index:1;
 }
 
 #popUp2 {
 	display:none;
-	position:fixed;
-	position:fixed;
+  position:fixed;
+  position:absolute;
 	height:50%;
 	width:40%;
 	background:#FFFFFF;
-	border:3px solid black;
+	border:3px solid green;
 	z-index:2;
 	padding:12px;
 	font-size:13px;
@@ -296,7 +296,7 @@ body {
 }
 
 #popUp2 h1 {
-	position: fixed;
+	position: absolute;
 	font-family: Verdana;
 	text-align: center;
 	color: black;
@@ -309,7 +309,7 @@ body {
 	padding-bottom: 1.8%;
 }
 
-#inpopUp2 {
+.inpopUp {
 	text-align: center;
 	font-family: Verdana;
 	font-size: 1rem;
@@ -398,14 +398,17 @@ body {
     to {transform: rotateX(360deg);}
 }
 
-#headslink {
-	z-index: 2;
-	border: 2px solid green;
-}
 
 #heads {
 	top: 70.6%;
-	z-index: 2;
-	border: 2px solid blue;
+	z-index: 1;
 }
 
+#tails {
+	top: 70.6%;
+	z-index: 1;
+}
+
+#popupz {
+	z-index: 80
+}

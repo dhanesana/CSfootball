@@ -64,7 +64,7 @@ function popOff(){
   }
 }
 
-//Center Chargers Popup
+//Center Win Popup
 function popupPos(){
   var winWidth = document.documentElement.clientWidth;
   var winHeight = document.documentElement.clientHeight;
@@ -77,7 +77,7 @@ function popupPos(){
   });  
 }
 
-//Center Seahawks Popup
+//Center Lose Popup
 function popupPos2(){
   var winWidth2 = document.documentElement.clientWidth;
   var winHeight2 = document.documentElement.clientHeight;
@@ -99,49 +99,50 @@ function popupPos2(){
       }
       while (team.length == 0);  */
 
-function getuserTeam() {
-  userTeam = document.teamform.response.value.toLowerCase();
-
-    if (userTeam == "seattle seahawks" || userTeam == "seahawks") {
-      opps = "The San Diego Super Chargers"
-      popupPos();
-      popLoad();
-  } else if (userTeam.length == 0) {
-    //error message!
-    $("#errormsg").text("YOU GOTTA TYPE SOMETHIN'");
-  } else if (userTeam.length > 20) {
-    $("#errormsg").text("TOO LONG! LIMIT: 20 CHARS'");
-  } else {
-      opps = "The Reigning Champions Seattle Seahawks"
-      popupPos2();
-      popLoad2();
-  };
-
-    $(".gouser").text("Go " + userTeam.toUpperCase() + "!");
-};
-
 // coin toss
 function tossHeads() {
     coinToss = Math.floor(Math.random() * 100);
-    userCoin = "h";
+    userCoin = "heads";
 
     if (coinToss > 50) {
-      wcoin = "h";
-      coin2 = "'h'";
+      wcoin = "heads";
   } else {
-      wcoin = "t";
-      coin2 = "'t'";
+      wcoin = "tails";
   };
 
     if (userCoin == wcoin) {
       popupPos();
       popLoad();
+      $(".gouser").text("The coin lands on " + wcoin.toUpperCase() + "!")
     } else {
       popupPos2();
       popLoad2();
+      $(".gouser").text("The coin lands on " + wcoin.toUpperCase() + "...")
     };
 
     //$(".gouser").text("Go " + userTeam.toUpperCase() + "!");
+};
+
+function tossTeads() {
+    coinToss = Math.floor(Math.random() * 100);
+    userCoin = "tails";
+
+    if (coinToss > 50) {
+      wcoin = "heads";
+  } else {
+      wcoin = "tails";
+  };
+
+    if (userCoin == wcoin) {
+      popupPos();
+      popLoad();
+      $(".gouser").text("The coin lands on " + wcoin.toUpperCase() + "!")
+    } else {
+      popupPos2();
+      popLoad2();
+      $(".gouser").text("The coin lands on " + wcoin.toUpperCase() + "...")
+    }
+
 };
 
 

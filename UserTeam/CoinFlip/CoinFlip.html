@@ -8,7 +8,6 @@
     <title id="demo">FLIP THAT COIN!</title>
   </head>
   <body>
-<section id="page">
     <div id="bg">
     <img src="img/bgtoss.jpg" class="stretch"/>
     </div>
@@ -31,49 +30,49 @@
         <p> Make your choice below! </p>
       </div>
     <div id="headsDiv">
-      <a onclick="tossHeads()" href="javascript:void(0);"> <img id="heads" src="img/coin.png"> </a>
+      <a id="headslink" onclick="tossHeads()" href="javascript:void(0)"> <img id="heads" src="img/coin.png"> </a>
     </div>
     <div id="tailsDiv">
-      <img id="tails" src="img/cointails.png"/>
-    </div>
+      <a id="tailslink" onclick="tossHeads()" href="javascript:void(0)"> <img id="tails" src="img/cointails.png"> </a>
     </div>
     <div id="footer" style="background-image: url(img/footer.jpg);">
       <p id="msg">CS20 Foundations</p>
       <p id="year">2014</p>
     </div>
+    <section id="popupz">
+        <!-- Win Toss Popup -->
+    <div id="popUp">
+      <div class="goH1">
+        <h1 class = "gouser"></h1>
+      </div>
+      <p class="inpopUp"></p>
+      <div>
+        <img id="helmet" src="img/coin.png"/>
+      </div>
+      <div class="divform">
+      <form action="CoinFlip/CoinFlip.html">
+      <input id="proceed" type="submit" value="Proceed">
+      </form>
+      </div>
+    </div>
+    <div id="popupBG"></div>
+    <!-- Lose Toss Popup -->
+    <div id="popUp2">
+      <div class="goH1">
+        <h1 class = "gouser"></h1>
+      </div>
+      <p class="inpopUp"></p>
+      <div>
+        <img id="helmet2" src="img/coin.png"/>
+      </div>
+      <div class="divform">
+      <form action="CoinFlip/CoinFlip.html">
+      <input class="proceed" type="submit" value="Proceed">
+      </form>
+      </div>
+    </div>
+    <div id="popupBG2"></div>
+  </section>
   </body>
-</section>
-    <!-- CHARGERS POPUP -->
-  <div id="popUp">
-    <div class="goH1">
-      <h1 class = "gouser"></h1>
-    </div>
-    <p id="inpopUp"> U GON PLAY THE SEAHAWKS </p>
-    <div>
-      <img id="helmet" src="img/chelmet.gif"/>
-    </div>
-    <div class="divform">
-    <form action="CoinFlip/CoinFlip.html">
-    <input id="proceed" type="submit" value="Proceed">
-    </form>
-    </div>
-  </div>
-  <div id="popupBG"></div>
-  <!-- SEAHAWKS POPUP -->
-  <div id="popUp2">
-    <div class="goH1">
-      <h1 class = "gouser"></h1>
-    </div>
-    <p id="inpopUp2"> U GON PLAY THE SEAHAWKS </p>
-    <div>
-      <img id="helmet2" src="img/shelmet.gif"/>
-    </div>
-    <div class="divform">
-    <form action="CoinFlip/CoinFlip.html">
-    <input class="proceed" type="submit" value="Proceed">
-    </form>
-    </div>
-  </div>
-  <div id="popupBG2"></div>
 
 </html>
