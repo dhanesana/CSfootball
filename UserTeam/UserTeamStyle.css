@@ -154,9 +154,10 @@ body {
 }
 
 #speechText {
+	text-align: center;
 	font-weight: bold;
 	position: absolute;
-	margin-left:27%;
+	margin-left:31%;
 	top:23%;
 	bottom:35%;
 	width:25%;

@@ -143,10 +143,10 @@ body {
 
 .speech {
 	position: absolute;
-	margin-left:25%;
+	margin-left:42%;
 	top:22%;
 	bottom:35%;
-	width:37%;
+	width:32%;
 	height:45%;
 	padding: 0px;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -156,9 +156,10 @@ body {
 }
 
 #speechText {
+	text-align: center;
 	font-weight: bold;
 	position: absolute;
-	margin-left:27%;
+	margin-left:46%;
 	top:23%;
 	bottom:35%;
 	width:25%;
@@ -166,35 +167,6 @@ body {
 	padding: 0px;
 	background-color: transparent;
 	border-radius: 2px;
-}
-
-.speech:after {
-	content: '';
-	position: absolute;
-	border-style: solid;
-	border-width: 9px 0 9px 29px;
-	border-color: transparent white;
-	display: block;
-	width: 0;
-	z-index: 1;
-	margin-top: -9px;
-	right: -29px;
-	top: 25%;
-}
-
-.speech:before
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 10px 0 10px 30px;
-border-color: transparent black;
-display: block;
-width: 0;
-z-index: 0;
-margin-top: -10px;
-right: -32px;
-top: 25%;
 }
 
 /* #button{
