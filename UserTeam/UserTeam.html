@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html>
-<meta http-equiv="refresh" content="3" > <!-- auto refresh -->
-	<head>
-		<link type="text/css" rel="stylesheet" href="UserTeamStyle.css"/>
-		<title>TONY HAWK SUPER PRO NFL 2K15</title>
-	</head>
-	<body>
-		<div id="header" style="background-image: url(http://i.imgur.com/k0CaKWW.jpg);">
-			<h2>THIS IS TONY HAWK AND UR PLAYING</h2>
-		</div>
-		<div id="lettuce" style="background-image: url(http://i.imgur.com/7mX4FMm.png);"></div>
-		<div id="tomato" style="background-image: url(http://i.imgur.com/2RmX7Og.png);"></div>
-		<div id="logo">
-			<a href="UserTeam/UserTeam.html"><img src="img/gamelogo.jpg"></a> 
-		</div>
-		<div id="cheese" style="background-image: url(http://i.imgur.com/YAcfjWi.png);"></div>
-		<div id="footer" style="background-image: url(http://i.imgur.com/k0CaKWW.jpg);">
-			<p> 2014 </p>
-		</div>
-	</body>
+<!--meta http-equiv="refresh" content="3" > <!-- auto refresh -->
+  <head>
+    <link type="text/css" rel="stylesheet" href="UserTeamStyle.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="UserTeamjs.js" async></script>
+    <title id="demo">VRY IMPORTANT GAME 2K15</title>
+  </head>
+  <body>
+<section id="page">
+    <div id="bg">
+    <img src="img/bgfield.jpg" class="stretch"/>
+    </div>
+    <div id="header">
+      <h2 id="headText">TEAM SELECTION</h2>
+    </div>
+    <div id="coachdiv">
+      <img id = "coach" src="img/coach.png"> 
+    </div>
+    <div class = "speech"></div>
+    <div id = "speechText">
+      <p> It's a brand new season!</p>
+      <p> What team do you wish to play for? </p>
+      <p> Use the box below to select your team! </p>
+    </div>
+    <div id="subdiv">
+      <!-- submit form -->
+      <form action="javascript:void(0);" method="post" id="submitbox" name="teamform" onsubmit="getuserTeam();">
+    <a id="teambox">Team Name: </a><input type="text" name="response" placeholder="Team Name Here" id="response">
+    <input type="submit" value="submit" id="submit">
+    </form>
+    <div id="error">
+      <p id="errormsg"></p>
+    </div>
+
+    </div>
+    <div id="footer" style="background-image: url(img/footer.jpg);">
+      <p id="msg"></p>
+      <p id="year">2014</p>
+    </div>
+  </body>
+</section>
+    <!-- CHARGERS POPUP -->
+    <div id="popUp">
+    <h1 class="gouser"></h1>
+    <p id="inpopUp"> U GON PLAY THE CHARGERS </p>
+      <div>
+        <img id="helmet" src="img/chelmet.gif"/>
+      </div>
+    </p>
+  </div>
+  <div id="popupBG"></div>
+  <!-- SEAHAWKS POPUP -->
+  <div id="popUp2">
+    <h1 class = "gouser"></h1>
+    <p id="inpopUp2"> U GON PLAY THE SEAHAWKS </p>
+      <div>
+        <img id="helmet2" src="img/shelmet.gif"/>
+      </div>
+  </div>
+  <div id="popupBG2"></div>
+
 </html>
