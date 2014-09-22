@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!--meta http-equiv="refresh" content="3" > <!-- auto refresh -->
+  <head>
+    <link type="text/css" rel="stylesheet" href="CoinFlipStyle.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="CoinFlipjs.js" async></script>
+    <title id="demo">FLIP THAT COIN!</title>
+  </head>
+  <body>
+<section id="page">
+    <div id="bg">
+    <img src="img/bgtoss.jpg" class="stretch"/>
+    </div>
+    <div id="header">
+      <h2 id="headText">COIN TOSS</h2>
+    </div>
+    <div id="refdiv">
+      <img id = "refFlip" src="img/refFlip.png"> 
+    </div>
+    <div class="coinflip">
+      <div class="front">
+        <img id="coin" src="img/coin.png"/>
+      </div>
+    </div>
+    <div class = "speech"></div>
+    <div id = "speechText">
+      <p> The ref will now flip a coin to determine</p>
+      <p> if you will kickoff or receive. </p>
+      <p> Do you pick Heads or Tails? </p>
+      <p> Win the toss to Receive! </p>
+      <p> 50% Chance! </p>
+    </div>
+    <div id="subdiv">
+      <!-- submit form -->
+      <form action="javascript:void(0);" method="post" id="submitbox" name="teamform" onsubmit="getuserTeam();">
+    <a id="teambox">Team Name: </a><input type="text" name="response" placeholder="Team Name Here" id="response">
+    <input type="submit" value="submit" id="submit">
+    </form>
+    <div id="error">
+      <p id="errormsg"></p>
+    </div>
+
+    </div>
+    <div id="footer" style="background-image: url(img/footer.jpg);">
+      <p id="msg">CS20 Foundations</p>
+      <p id="year">2014</p>
+    </div>
+  </body>
+</section>
+    <!-- CHARGERS POPUP -->
+  <div id="popUp">
+    <div class="goH1">
+      <h1 class = "gouser"></h1>
+    </div>
+    <p id="inpopUp"> U GON PLAY THE SEAHAWKS </p>
+    <div>
+      <img id="helmet" src="img/chelmet.gif"/>
+    </div>
+    <div class="divform">
+    <form action="CoinFlip/CoinFlip.html">
+    <input id="proceed" type="submit" value="Proceed">
+    </form>
+    </div>
+  </div>
+  <div id="popupBG"></div>
+  <!-- SEAHAWKS POPUP -->
+  <div id="popUp2">
+    <div class="goH1">
+      <h1 class = "gouser"></h1>
+    </div>
+    <p id="inpopUp2"> U GON PLAY THE SEAHAWKS </p>
+    <div>
+      <img id="helmet2" src="img/shelmet.gif"/>
+    </div>
+    <div class="divform">
+    <form action="CoinFlip/CoinFlip.html">
+    <input class="proceed" type="submit" value="Proceed">
+    </form>
+    </div>
+  </div>
+  <div id="popupBG2"></div>
+
+</html>
