@@ -56,7 +56,7 @@ body {
 }
 
 #logo {
-	position: absolute;
+	position: fixed;
 	margin-left:25%;
 	top:35%;
 	bottom:35%;
