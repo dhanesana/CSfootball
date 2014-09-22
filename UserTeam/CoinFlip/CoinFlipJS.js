@@ -9,12 +9,12 @@ $('.speech').hide().fadeIn(1200);
 
 // ref slides up to the middle
 $("#refFlip").animate({
-  bottom:'47%',
+  bottom:'30%',
   opacity:'1',
 }, 700, 'swing');
 
-$(".front").animate({
-  bottom: '170px',
+$('.front').animate({
+  top:'26%',
   opacity:'1',
 }, 700, 'linear');
 
@@ -119,6 +119,31 @@ function getuserTeam() {
 
     $(".gouser").text("Go " + userTeam.toUpperCase() + "!");
 };
+
+// coin toss
+function tossHeads() {
+    coinToss = Math.floor(Math.random() * 100);
+    userCoin = "h";
+
+    if (coinToss > 50) {
+      wcoin = "h";
+      coin2 = "'h'";
+  } else {
+      wcoin = "t";
+      coin2 = "'t'";
+  };
+
+    if (userCoin == wcoin) {
+      popupPos();
+      popLoad();
+    } else {
+      popupPos2();
+      popLoad2();
+    };
+
+    //$(".gouser").text("Go " + userTeam.toUpperCase() + "!");
+};
+
 
 
 

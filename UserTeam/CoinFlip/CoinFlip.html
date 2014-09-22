@@ -26,11 +26,16 @@
     <div class = "speech"></div>
       <div id = "speechText">
         <p> The ref will now flip a coin to determine if you will kick or receive ...</p>
-        <p> Win the toss to Receive! </p>
-        <p> 50% Chance! </p>
+        <p></p>
         <p> Do you pick Heads or Tails? </p>
+        <p> Make your choice below! </p>
       </div>
-    <div id="subdiv"></div>
+    <div id="headsDiv">
+      <a onclick="tossHeads()" href="javascript:void(0);"> <img id="heads" src="img/coin.png"> </a>
+    </div>
+    <div id="tailsDiv">
+      <img id="tails" src="img/cointails.png"/>
+    </div>
     </div>
     <div id="footer" style="background-image: url(img/footer.jpg);">
       <p id="msg">CS20 Foundations</p>

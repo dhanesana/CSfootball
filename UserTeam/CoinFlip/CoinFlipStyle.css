@@ -3,6 +3,7 @@ html {
 }
 
 body {
+	position:fixed;
 }
 
 #bg {
@@ -19,12 +20,12 @@ body {
     height:100%;
 }
 
-#subdiv {
-	position: absolute;
+#headsDiv {
+	position: fixed;
 	bottom: 17%;
 	height: 12%;
-	width:40%;
-	margin-left: 30%;
+	width:20%;
+	margin-left: 29%;
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 3px solid black;
 	border-top-left-radius: 10px;
@@ -34,8 +35,37 @@ body {
 	box-shadow: 9px 5px 5px 0px rgba(50, 50, 50, 0.7);
 }
 
+#tailsDiv {
+	position: fixed;
+	bottom: 17%;
+	height: 12%;
+	width:20%;
+	margin-left: 51%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 3px solid black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 9px 5px 5px 0px rgba(50, 50, 50, 0.7);
+}
+
+#heads {
+	position: fixed;
+	height: 10%;
+	width: 8%;
+	right: 56%;
+}
+
+#tails {
+	position: fixed;
+	height: 10%;
+	width: 8%;
+	right: 34%;
+}
+
 #logo {
-	position: absolute;
+	position: fixed;
 	margin-left:25%;
 	top:23%;
 	bottom:35%;
@@ -47,25 +77,20 @@ body {
 }
 
 #refdiv {
-	position: absolute;
-	margin-left:0%;
-	top:19%;
-	bottom:35%;
+	position: fixed;
+	margin-left:25%;
 	width:50%;
 	height:50%;
 	background-color: transparent;
 	z-index: 1;
-	border: transparent;
 }
 
 #refFlip {
-	position: relative;
-	height:80%;
-	width:40%;
-	z-index: 3;
 	opacity: 0;
-	margin-top: 40%;
-	margin-left:50%;
+	position: fixed;
+	height:30%;
+	width:20%;
+	bottom: 0%;
 }
 
 
@@ -75,7 +100,7 @@ body {
 }
 
 #header {
-	position: absolute;
+	position: fixed;
 	display: block;
 	top: 5%;
 	border-top-left-radius: 20px;
@@ -91,9 +116,9 @@ body {
 }
 
 #headText {
-	margin-left: 28%;
-	margin-top: 2.7%;
-	position: absolute;
+	margin-left: 11%;
+	margin-top: 2%;
+	position: fixed;
 	line-height: 100%;
 	font-family: Futura;
 	font-size: 3rem;
@@ -104,7 +129,7 @@ body {
 
 #footer {
 	opacity: .7;
-	position: absolute;
+	position: fixed;
 	display: block;
 	bottom: 5%;
 	border-top-left-radius: 20px;
@@ -116,6 +141,7 @@ body {
 	width: 50%;
 	border: 2px solid black;
 	box-shadow: 3px 10px 5px 0px rgba(50, 50, 50, 0.7);
+	z-index: -1;
 }
 
 #msg {
@@ -142,7 +168,7 @@ body {
 }
 
 .speech {
-	position: absolute;
+	position: fixed;
 	margin-left:42%;
 	top:22%;
 	bottom:35%;
@@ -158,7 +184,7 @@ body {
 #speechText {
 	text-align: center;
 	font-weight: bold;
-	position: absolute;
+	position: fixed;
 	margin-left:46%;
 	top:23%;
 	bottom:35%;
@@ -184,7 +210,7 @@ body {
 	height:100%;
 	width:100%;
 	position:fixed;
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
 	background-color: #FFB81C;
@@ -194,7 +220,7 @@ body {
 #popUp {
 	display:none;
 	position:fixed;
-	position:absolute;
+	position:fixed;
 	height:50%;
 	width:40%;
 	background:#FFFFFF;
@@ -209,7 +235,7 @@ body {
 }
 
 #popUp h1 {
-	position: absolute;
+	position: fixed;
 	font-family: Verdana;
 	text-align: center;
 	color: black;
@@ -245,7 +271,7 @@ body {
 	height:100%;
 	width:100%;
 	position:fixed;
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
 	background-color: #23DB2A;
@@ -255,7 +281,7 @@ body {
 #popUp2 {
 	display:none;
 	position:fixed;
-	position:absolute;
+	position:fixed;
 	height:50%;
 	width:40%;
 	background:#FFFFFF;
@@ -270,7 +296,7 @@ body {
 }
 
 #popUp2 h1 {
-	position: absolute;
+	position: fixed;
 	font-family: Verdana;
 	text-align: center;
 	color: black;
@@ -309,7 +335,7 @@ body {
 #error {
 	font-family: Verdana;
 	font-weight: bold;
-	position: absolute;
+	position: fixed;
 	color: red;
 	margin-left: 26%;
 	bottom:5%;
@@ -321,27 +347,28 @@ body {
 
 /* coin flipping */
 #coin {
-	height: 9%;
-	width: 9%;
+	height: 35%;
+	width: 35%;
 }
 
 .front {
+	position: fixed;
 	opacity: 0;
-	margin-left: 41%;
-	margin-top: 28%;
+	top: 50%;
+	margin-left: 40%;
 }
 
 .coinflip {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100%;
-  z-index:20;
+  z-index:1;
 
 }
 
 .coinflip .front
 {
-  position:relative;
+  position: fixed;
   transition: 1s linear;
   background-color: transparent;
   backface-visibility: visible;
@@ -369,5 +396,16 @@ body {
     to {-o-transform: rotateX(360deg);}
     from {transform: rotateX(0deg);}
     to {transform: rotateX(360deg);}
+}
+
+#headslink {
+	z-index: 2;
+	border: 2px solid green;
+}
+
+#heads {
+	top: 70.6%;
+	z-index: 2;
+	border: 2px solid blue;
 }
 
