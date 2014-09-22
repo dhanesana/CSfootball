@@ -104,15 +104,13 @@ function getuserTeam() {
   } else if (userTeam.length == 0) {
     //error message!
     $("#errormsg").text("YOU GOTTA TYPE SOMETHIN'");
+  } else if (userTeam.length > 20) {
+    $("#errormsg").text("TOO LONG! LIMIT: 20 CHARS'");
   } else {
       opps = "The Reigning Champions Seattle Seahawks"
       popupPos2();
       popLoad2();
   };
-
-    if (userTeam.length == 0) {
-    $("#errormsg").text("YOU GOTTA TYPE SOMETHIN'");
-  }
 
     $(".gouser").text("Go " + userTeam.toUpperCase() + "!");
 };
