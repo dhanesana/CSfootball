@@ -98,7 +98,8 @@ function getuserTeam() {
   userTeam = document.teamform.response.value.toLowerCase();
 
     if (userTeam == "seattle seahawks" || userTeam == "seahawks") {
-      opps = "The San Diego Super Chargers"
+      opps = "CHARGERS";
+      $(".inpopUp").text("U GON PLAY THE " + opps.toUpperCase() + "!");
       popupPos();
       popLoad();
   } else if (userTeam.length == 0) {
@@ -107,7 +108,8 @@ function getuserTeam() {
   } else if (userTeam.length > 20) {
     $("#errormsg").text("TOO LONG! LIMIT: 20 CHARS'");
   } else {
-      opps = "The Reigning Champions Seattle Seahawks"
+      opps = "SEAHAWKS";
+      $(".inpopUp").text("U GON PLAY THE " + opps.toUpperCase() + "!");
       popupPos2();
       popLoad2();
   };
