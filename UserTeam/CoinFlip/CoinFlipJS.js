@@ -19,7 +19,6 @@ $('.front').animate({
 }, 700, 'linear');
 
 // Jquery Popups !
-
 //Load Chargers Popup
 var status = 0;
 function popLoad(){
@@ -89,15 +88,6 @@ function popupPos2(){
     "left": winWidth2/2-popupWidth2/2
   });  
 }
-
-//debug userTeam length
-  /* do {
-      if (team.length > 0) break;
-      alert
-      var team = prompt ("U GOTTA TYPE SOMETHIN MAN").toLowerCase();
-      if (team.length > 0) break;      
-      }
-      while (team.length == 0);  */
 
 // coin toss
 function tossHeads() {
