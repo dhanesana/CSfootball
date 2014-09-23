@@ -12,11 +12,11 @@ $("#refFlip").animate({
   bottom:'30%',
   opacity:'1',
 }, 700, 'swing');
-
+// flipping coin slides up
 $('.front').animate({
   top:'26%',
   opacity:'1',
-}, 700, 'linear');
+}, 500, 'linear');
 
 // Jquery Popups !
 //Load Chargers Popup
