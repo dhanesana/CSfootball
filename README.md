@@ -1,24 +1,22 @@
-Gameplay: Choose your own adventure. Random Coin Toss. Restart Game. Maaaaaybe music. maybe...
+Gameplay: Based off of previous guessing game. Choose your own adventure. Random Coin Toss.
 
 Images:
-Aerial Football Field
-Chargers helmet
-Seahawks helmet
-Blank helmet - insert text of team on it if possible
-Images for dialogue
-???
+Burger, Logo, Football Field, Cartoon Football Characters
 
 HTML:
 Submission Box for User input
 Create Buttons for Yes/No, Heads/Tails, Left/Right answers
 
 CSS:
-Boxes, font, placement
+Placement, Appearance, coinFlip animation
 
-JS:
-Choices lead to diff responses
-Error messages
+JS & jQuery
+Random Coin Toss,
+jQuery (+ UI) Magic
+jQuery UI,
+Event based animations and effects
+Popups
 
-Jquery:
-event responses to clicking
-maybe fancy menus iono
+Organization:
+Consolidate linked files to their own respective directories.
+Seperate directory for storing images.
