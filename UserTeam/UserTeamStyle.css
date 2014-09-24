@@ -114,6 +114,7 @@ body {
 	width: 50%;
 	border: 2px solid black;
 	box-shadow: 3px 10px 5px 0px rgba(50, 50, 50, 0.7);
+	z-index: -1;
 }
 
 #msg {

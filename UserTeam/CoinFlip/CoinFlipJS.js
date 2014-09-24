@@ -1,22 +1,37 @@
 var userTeam,
     oppTeam;
 
-//Everything Fades in
-$('body').hide().fadeIn(1000);
+$(document).ready(function() {
+    //Everything Fades in
+  $('body').hide().fadeIn(1000);
 
-//Speech Fade in on Load
-$('.speech').hide().fadeIn(1200);
+  //Speech Fade in on Load
+  $('.speech').hide().fadeIn(1200);
 
-// ref slides up to the middle
-$("#refFlip").animate({
-  bottom:'30%',
-  opacity:'1',
-}, 700, 'swing');
-// flipping coin slides up
-$('.front').animate({
-  top:'26%',
-  opacity:'1',
-}, 500, 'linear');
+  // ref slides up to the middle
+  $("#refFlip").animate({
+    bottom:'30%',
+    opacity:'1',
+  }, 700, 'swing');
+  // flipping coin slides up
+  $('.front').animate({
+    top:'26%',
+    opacity:'1',
+  }, 500, 'linear');
+  $("#heads").mouseenter(function(){
+      $(this).css({"opacity": "0.5"});
+    });
+  $("#heads").mouseleave(function(){
+    $(this).css({"opacity": "1"});
+  });
+  $("#tails").mouseenter(function(){
+      $(this).css({"opacity": "0.5"});
+    });
+  $("#tails").mouseleave(function(){
+    $(this).css({"opacity": "1"});
+  });
+});
+
 
 // Jquery Popups !
 //Load Chargers Popup
