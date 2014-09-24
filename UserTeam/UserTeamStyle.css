@@ -257,9 +257,10 @@ top: 25%;
 }
 
 #helmet {
-	height: 50%;
-	width: 50%;
-	margin-left: 25%;
+	position:fixed;
+	height: 25%;
+	width: 20%;
+	left: 41.5%;
 }
 
 /* SEAHAWKS POPUP */
@@ -312,9 +313,10 @@ top: 25%;
 }
 
 #helmet2 {
-	height: 50%;
-	width: 50%;
-	margin-left: 25%;
+	position:fixed;
+	height: 25%;
+	width: 20%;
+	left: 41.5%;
 }
 /* proceed  button */
 .divform {
