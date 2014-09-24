@@ -70,7 +70,7 @@ $(document).ready(function() {
       ,{ duration: 500, queue: false });
     //everything fades in
     //logo fades in a bit later and replaces painpattynoLogo
-    $('#start').fadeIn('fast');
+    $('#start').fadeIn(1);
     $('#gamelogo').fadeIn(2500);
     $('#hawk').fadeIn(1000);
     $('#footer').fadeIn(2500);
@@ -112,12 +112,8 @@ $(document).ready(function() {
     });
     $("#start").mouseleave(function(){
       $("#gamelogo").css({"opacity": "1"});
-    });  
-  });
-});
-
-
-//Start Button Blinking via StackOverflow
+    });
+    //Start Button Blinking via StackOverflow
 function blink(selector){
     $(selector).animate({opacity:0}, 50, "linear", function(){
         $(this).delay(700);
@@ -128,7 +124,12 @@ function blink(selector){
     });
 }
 
-blink("#start");
+blink("#start");  
+  });
+});
+
+
+
 
 
 
