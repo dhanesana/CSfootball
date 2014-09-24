@@ -13,6 +13,18 @@ $("#coach").animate({
   opacity:'1',
 }, 700, 'linear');
 
+//input has border when focused
+$(document).ready(function() {
+    $('input').focus(function() {
+        $(this).css('outline-style','dashed');
+        $(this).css('outline-color', 'green')
+    });
+    $('input').blur(function() {
+        $(this).css('outline-style','none');
+        $(this).css('outline-color', 'none')
+    });
+});
+
 // Jquery Popups !
 
 //Load Chargers Popup
