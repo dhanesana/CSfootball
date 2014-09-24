@@ -4,19 +4,18 @@ Images:
 Burger, Logo, Football Field, Cartoon Football Characters
 
 HTML:
-Submission Box for User input
+Submission Box for User input,
 Create Buttons for Yes/No, Heads/Tails, Left/Right answers
 
 CSS:
 Placement, Appearance, coinFlip animation
 
-JS & jQuery
+JS & jQuery:
 Random Coin Toss,
-jQuery (+ UI) Magic
 jQuery UI,
-Event based animations and effects
+Event based animations and effects,
 Popups
 
 Organization:
-Consolidate linked files to their own respective directories.
+Consolidate linked files to their own respective directories,
 Seperate directory for storing images.
