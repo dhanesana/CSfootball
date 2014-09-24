@@ -83,7 +83,7 @@ body {
 	border-bottom-left-radius: 20px;
 	height: 12%;
 	width: 50%;
-	right: 25%;
+	right: 24.85%;
 	box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.7);
 	border: 2px solid black;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -109,7 +109,7 @@ body {
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-	right: 25%;
+	right: 24.85%;
 	height: 10%;
 	width: 50%;
 	border: 2px solid black;
@@ -208,7 +208,6 @@ top: 25%;
 	height:100%;
 	width:100%;
 	position:fixed;
-	position:absolute;
 	top:0;
 	left:0;
 	background-color: #FFB81C;
@@ -218,9 +217,9 @@ top: 25%;
 #popUp {
 	display:none;
 	position:fixed;
-	position:absolute;
 	height:50%;
 	width:40%;
+	right: 10%;
 	background:#FFFFFF;
 	border:3px solid black;
 	z-index:2;
@@ -269,7 +268,6 @@ top: 25%;
 	height:100%;
 	width:100%;
 	position:fixed;
-	position:absolute;
 	top:0;
 	left:0;
 	background-color: #23DB2A;
@@ -279,9 +277,9 @@ top: 25%;
 #popUp2 {
 	display:none;
 	position:fixed;
-	position:absolute;
 	height:50%;
 	width:40%;
+	right: 10%;
 	background:#FFFFFF;
 	border:3px solid black;
 	z-index:2;
@@ -320,10 +318,11 @@ top: 25%;
 }
 /* proceed  button */
 .divform {
+	position: fixed;
 	height: 10%;
 	width: 50%;
-	margin-top: 4%;
-	margin-left: 44%;
+	top: 73%;
+	left: 48%;
 }
 
 .proceed {
