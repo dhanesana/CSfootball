@@ -2,6 +2,15 @@ html {
   font-size: 17px;
 }
 
+#sup {
+	position: fixed;
+	display: block;
+	font-family: Futura;
+	font-weight: bold;
+	top: 15%;
+	right: 48.5%;
+}
+
 body {
   background-color: white;
 }
@@ -25,7 +34,7 @@ body {
   top: 36%;
   height: 6%;
   width:30%;
-  margin-left: 35%;
+  right: 35%;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
   box-shadow:  9px 5px 5px 0px rgba(50, 50, 50, 0.7);
@@ -37,7 +46,7 @@ body {
   top: 42%;
   height: 5%;
   width:30%;
-  margin-left: 35%;
+  right: 35%;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100px;
@@ -51,7 +60,7 @@ body {
   bottom: 39%;
   height: 5%;
   width:30%;
-  margin-left: 35%;
+  right: 35%;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100%;
@@ -70,6 +79,8 @@ body {
 }
 
 #start {
+	display:none;
+	z-index: 50;
 	left: 48%;
 	bottom: 35%;
 	color: white;
@@ -90,9 +101,20 @@ body {
   width: 100%;
 }
 
+#nopattylogo {
+  position: fixed;
+  right:35%;
+  top:35%;
+  bottom:35%;
+  width:30%;
+  height:30%;
+  display:block;
+}
+
 #pattynoLogo {
-	height:100%;
-	width:100%;
+	position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 #header {
@@ -104,7 +126,7 @@ body {
   border-top-right-radius: 300px;
   height: 12%;
   width: 30%;
-  margin-left: 35%;
+  right: 35%;
   /*border: 2px solid black;*/
   box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.7);
 }
@@ -116,7 +138,7 @@ body {
   bottom: 30%;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
-  margin-left: 35%;
+  right: 35%;
   height: 10%;
   width: 30%;
   /*border: 2px solid black;*/
@@ -158,4 +180,58 @@ body {
   background:yellow;
   border:1px solid #cecece;
   z-index:1;
+}
+
+/* iono yet */
+/* coin flipping animation... doesn't show well on safari */
+.coin {
+	height: 35%;
+	width: 35%;
+}
+
+.front {
+	position: fixed;
+	opacity: 1;
+	top: 50%;
+	left: 41%;
+}
+
+.coinflip {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index:1;
+
+}
+
+.coinflip .front
+{
+  position: fixed;
+  transition: 1s linear;
+  background-color: transparent;
+  backface-visibility: visible;
+	-webkit-animation: flip 1s linear infinite;
+    -moz-animation: flip 1s linear infinite;
+    animation: flip 1s linear infinite;
+ }
+
+ @-webkit-keyframes flip {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes flip {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes flip {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+    from {-o-transform: rotate(0deg);}
+    to {-o-transform: rotate(360deg);}
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
