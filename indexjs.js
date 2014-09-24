@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('#pattynoLogo').on('mouseenter mouseleave',function( e ) {
     if (loop) {
       var el = $("#pattynoLogo");
-      if(!el.data("b"))el.effect("bounce", {direction:'up',distance:10,times:1} );
+      if(!el.data("b"))el.effect("bounce", {direction:'up',distance:5,times:5} );
       el.data("b",e.type=="mouseenter"?true:false);
       $('div').css({"cursor": "pointer"});
     }

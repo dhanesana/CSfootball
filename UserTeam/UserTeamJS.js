@@ -2,16 +2,16 @@ var userTeam,
     oppTeam;
 
 //Everything Fades in
-$('body').hide().fadeIn(1000);
+$('body').hide().fadeIn(2500);
 
 //Speech Fade in on Load
-$('.speech').hide().fadeIn(1200);
+$('.speech').hide().fadeIn(3000);
 
 // Coach slides to the right
 $("#coach").animate({
   left:'100%',
   opacity:'1',
-}, 700, 'linear');
+}, 1200, 'linear');
 
 //input has border when focused
 $(document).ready(function() {

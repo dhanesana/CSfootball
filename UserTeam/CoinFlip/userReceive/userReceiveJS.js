@@ -87,15 +87,15 @@ function popOff(){
 }
 
 //Center Win Popup
-function popupPos(){
+/* function popupPos(){
   var winWidth = document.documentElement.clientWidth;
   var winHeight = document.documentElement.clientHeight;
   var popupHeight = $("#popUp").height();
   var popupWidth = $("#popUp").width();
   $("#popUp").css({
-    "position": "fixed",
-    "top": winHeight/2-popupHeight/1.9,
-    "left": winWidth/2-popupWidth/1.9
+    "position": "absolute",
+    "top": winHeight/2-popupHeight/2,
+    "left": winWidth/2-popupWidth/2
   });  
 }
 
@@ -106,11 +106,11 @@ function popupPos2(){
   var popupHeight2 = $("#popUp2").height();
   var popupWidth2 = $("#popUp2").width();
   $("#popUp2").css({
-    "position": "fixed",
-    "top": winHeight2/2-popupHeight2/1.9,
-    "left": winWidth2/2-popupWidth2/1.9
+    "position": "absolute",
+    "top": winHeight2/2-popupHeight2/2,
+    "left": winWidth2/2-popupWidth2/2
   });  
-}
+} */
 
 // coin toss
 function tossHeads() {
