@@ -97,15 +97,6 @@ function popupPos2(){
   });  
 }
 
-//debug userTeam length
-  /* do {
-      if (team.length > 0) break;
-      alert
-      var team = prompt ("U GOTTA TYPE SOMETHIN MAN").toLowerCase();
-      if (team.length > 0) break;      
-      }
-      while (team.length == 0);  */
-
 function getuserTeam() {
   userTeam = document.teamform.response.value.toLowerCase();
 
