@@ -16,12 +16,10 @@ $("#coach").animate({
 //input has border when focused
 $(document).ready(function() {
     $('input').focus(function() {
-        $(this).css('outline-style','dashed');
-        $(this).css('outline-color', 'green')
+        $(this).css('outline', '2px dashed green')
     });
     $('input').blur(function() {
-        $(this).css('outline-style','none');
-        $(this).css('outline-color', 'none')
+        $(this).css('outline','none');
     });
 });
 
