@@ -10,9 +10,11 @@ $(document).ready(function() {
 
   // ref slides up to the middle
   $("#refFlip").animate({
-    bottom:'30%',
+    top:'36.5%',
     opacity:'1',
-  }, 700, 'swing');
+  }, 1500, 'easeOutBounce');
+  //GAME PLAN slides in
+  $("#gamePlan").effect("slide",1500, 'easeOutBounce');
   // flipping coin slides up
   $('.front').animate({
     top:'26%',
@@ -20,23 +22,15 @@ $(document).ready(function() {
   }, 500, 'linear');
   $("#heads").mouseenter(function(){
     $(this).css({"opacity": "0.5"});
-    $(".bigCoin").attr("src","img/coin.png");
-    $(".bigCoin").css({"opacity": "0.99"});
-    $(".bigCoin").fadeIn('fast');
   });
   $("#heads").mouseleave(function(){
     $(this).css({"opacity": "1"});
-    $(".bigCoin").effect('explode');
   });
   $("#tails").mouseenter(function(){
-      $(this).css({"opacity": "0.5"});
-      $(".bigCoin").attr("src","img/coinTails.png");
-      $(".bigCoin").css({"opacity": "0.99"});
-      $(".bigCoin").fadeIn('fast');
+      $(this).css({"opacity": "0.5"});;
     });
   $("#tails").mouseleave(function(){
     $(this).css({"opacity": "1"});
-    $(".bigCoin").effect('explode');
   });
 });
 
@@ -166,7 +160,10 @@ function tossTails() {
 
 };
 
-
+function receiveLeft() {
+  $('#preGame').fadeOut('fast');
+  $('#gameBG').fadeIn(3500)
+}
 
 
 

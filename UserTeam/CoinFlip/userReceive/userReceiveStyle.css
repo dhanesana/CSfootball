@@ -1,5 +1,6 @@
 html {
   font-size: 17px;
+  width: 1024px;
 }
 
 body {
@@ -32,11 +33,11 @@ body {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: 9px 5px 5px 0px rgba(50, 50, 50, 0.7);
-  z-index: 2;
+  z-index: 1;
 }
 
 #tailsDiv {
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   bottom: 17%;
   height: 12%;
@@ -53,22 +54,24 @@ body {
 
 #heads {
   position: fixed;
-  height: 10%;
+  height: 9%;
   width: 8%;
-  right: 57%;
+  right: 58%;
+  bottom: 19%;
 }
 
 #tails {
   position: fixed;
-  height: 10%;
+  height: 9%;
   width: 8%;
-  right: 35.2%;
+  bottom: 19%;
+  right: 34.5%;
 }
 
 /* referee */
 #refdiv {
   position: fixed;
-  margin-left:25%;
+  margin-left:27%;
   width:50%;
   height:50%;
   background-color: transparent;
@@ -80,7 +83,20 @@ body {
   position: fixed;
   height:30%;
   width:20%;
-  bottom: 0%;
+  top: 0%;
+}
+
+#gamePlandiv {
+  position: fixed;
+}
+
+#gamePlan {
+  position: fixed;
+  width: 20%;
+  top: 22%;
+  left: 30.5%;
+  font-family: impact;
+  font-size: 2em;
 }
 
 /* header div and its text */
@@ -106,13 +122,13 @@ body {
   line-height: 12%;  /* same as height of header */
   font-family: Futura;
   font-size: 3rem;
-  color: white;
+  color: White;
   text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.8);
 
 }
 /*footer div and its contents */
 #footer {
-  opacity: .7;
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   display: block;
   bottom: 5%;
@@ -154,15 +170,14 @@ body {
 /* dialogue box and its text */
 #dialogueDiv {
   position: fixed;
-  left: 42%;
+  left: 27.5%;
   top:22%;
   bottom:35%;
-  width:32%;
+  width:45%;
   height:45%;
   padding: 0px;
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 35px;
-  border: black solid 3px;
+  border:3px solid black;
   box-shadow:  9px 5px 5px 0px rgba(50, 50, 50, 0.7);
   z-index: -1;
 }
@@ -171,7 +186,7 @@ body {
   text-align: center;
   font-weight: bold;
   position: fixed;
-  right: 29%;
+  right: 26%;
   top:23%;
   bottom:35%;
   width:25%;
@@ -186,7 +201,7 @@ body {
   margin-bottom:500px;
 } */
 
-/* WIN TOSS POPUP */
+/* Win Toss POPUP */
 #popupBG {
   display:none;
   height:100%;
@@ -194,7 +209,7 @@ body {
   position:fixed;
   top:0;
   left:0;
-  background-color: #FFFF99;
+  background-color: #FFFF00;
   z-index:1;
 }
 
@@ -205,7 +220,7 @@ body {
   width:40%;
   right: 10%;
   background:#FFFFFF;
-  border:3px outset black;
+  border:3px solid black;
   z-index:2;
   padding:12px;
   font-size:13px;
@@ -240,15 +255,14 @@ body {
   font-size: 1rem;
 }
 
-/* applies to both popups via jquery */
 .coinPic {
   position:fixed;
   height: 25%;
   width: 20%;
-  left: 40.5%;
+  left: 40%;
 }
 
-/* LOSE TOSS POPUP */
+/* Lose Toss POPUP */
 #popupBG2{
   display:none;
   height:100%;
@@ -256,7 +270,7 @@ body {
   position:fixed;
   top:0;
   left:0;
-  background-color: #4775FF;
+  background-color: #3333CC;
   z-index:1;
 }
 
@@ -267,7 +281,7 @@ body {
   width:40%;
   right: 10%;
   background:#FFFFFF;
-  border:3px outset black;
+  border:3px solid black;
   z-index:2;
   padding:12px;
   font-size:13px;
@@ -303,98 +317,70 @@ body {
   height: 10%;
   width: 50%;
   top: 73%;
-  left: 49.5%;
+  left: 48%;
 }
 
 .proceed {
-}
-
-
-/* coin flipping animation... doesn't show well on safari */
-.coin {
-  height: 35%;
-  width: 35%;
-}
-
-.front {
-  position: fixed;
-  opacity: 1;
-  top: 50%;
-  left: 41%;
-}
-
-.coinflip {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index:1;
-
-}
-
-.coinflip .front
-{
-  position: fixed;
-  transition: 1s linear;
-  background-color: transparent;
-  backface-visibility: visible;
-  -webkit-animation: flip 1s linear infinite;
-    -moz-animation: flip 1s linear infinite;
-    animation: flip 1s linear infinite;
- }
-
- @-webkit-keyframes flip {
-    from {-webkit-transform: rotateX(0deg);}
-    to {-webkit-transform: rotateX(360deg);}
-}
-
-@-moz-keyframes flip {
-    from {-moz-transform: rotateX(0deg);}
-    to {-moz-transform: rotateX(360deg);}
-}
-
-@keyframes flip {
-    from {-webkit-transform: rotateX(0deg);}
-    to {-webkit-transform: rotateX(360deg);}
-    from {-moz-transform: rotateX(0deg);}
-    to {-moz-transform: rotateX(360deg);}
-    from {-o-transform: rotateX(0deg);}
-    to {-o-transform: rotateX(360deg);}
-    from {transform: rotateX(0deg);}
-    to {transform: rotateX(360deg);}
-}
-
-
-#heads {
-  position: fixed;
-  top: 70.6%;
-  z-index: 1;
-}
-
-#tails {
-  position: fixed;
-  top: 70.6%;
-  z-index: 1;
 }
 
 /*RDY MSG*/
 .rdy {
   font-family: Futura;
   position: fixed;
+  text-align: center;
   top: 60%;
-  left: 44.5%;
+  left: 30.5%;
+  width: 40%;
 }
 
 /* Coin Image Hover */
-#bigCoinDiv {
+/*#bigCoinDiv {
   position: fixed;
   height: 100%;
   width: 100%;
+  border: none;
 }
 
 .bigCoin {
-  z-index: 60;
+  z-index: 1;
   position: fixed;
   height: 40%;
   width: 30%;
   left: 43%;
+} */
+
+#receive {
+  text-align: center;
+  position: fixed;
+  left: 47%;
+}
+
+#kickoff {
+  text-align: center;
+  position: fixed;
+  left: 46.6%;
+}
+
+/* font and line height for certain <p>'s */
+
+.textheight {
+  line-height: 40%;
+}
+
+p {
+  line-height: 1%;
+}
+
+br {
+   line-height: 5%;
+}
+
+/* game mode */
+
+#gameBG {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    z-index: -1;
+    display: none;
 }
