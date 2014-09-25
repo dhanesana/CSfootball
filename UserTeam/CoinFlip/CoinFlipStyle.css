@@ -33,11 +33,11 @@ body {
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow: 9px 5px 5px 0px rgba(50, 50, 50, 0.7);
-	z-index: 2;
+	z-index: 1;
 }
 
 #tailsDiv {
-	z-index: 2;
+	z-index: 1;
 	position: fixed;
 	bottom: 17%;
 	height: 12%;
@@ -391,10 +391,11 @@ body {
 	position: fixed;
 	height: 100%;
 	width: 100%;
+	border: none;
 }
 
 .bigCoin {
-	z-index: 60;
+	z-index: 1;
 	position: fixed;
 	height: 40%;
 	width: 30%;
