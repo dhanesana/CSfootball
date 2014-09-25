@@ -19,3 +19,5 @@ Popups
 Organization:
 Consolidate linked files to their own respective directories,
 Seperate directory for storing images.
+
+Concept: random notes
