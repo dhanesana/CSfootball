@@ -97,6 +97,9 @@ function popupPos2(){
 
 function getuserTeam() {
   userTeam = document.teamform.response.value.toLowerCase();
+  // Create cookie to save userTeam
+  document.cookie=userTeam;
+
 
     if (userTeam == "seattle seahawks" || userTeam == "seahawks") {
       opps = "CHARGERS";
@@ -116,7 +119,17 @@ function getuserTeam() {
   };
 
     $(".gouser").text("Go " + userTeam.toUpperCase() + "!");
+
+    function setCookie(name, value, expires, path, domain, secure){
+    document.cookie= name + "=" + escape(userTeam) +
+    ((expires) ? "; expires=" + expires.toGMTString() : "") +
+    ("; path=/CoinFlip/userReceive/userReceiveJS.js") +       //you having wrong quote here
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+}
+
 };
+
 
 
 
