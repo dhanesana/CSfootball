@@ -384,3 +384,12 @@ br {
     z-index: -1;
     display: none;
 }
+
+#playerRun {
+  position: fixed;
+  width:4%;
+  height: 6%;
+  top:45%;
+  left: 10%;
+  display: none;
+}

@@ -34,7 +34,7 @@ $(document).ready(function() {
   });
 });
 
-
+/*
 // Jquery Popups !
 //Load Chargers Popup
 var status = 0;
@@ -61,7 +61,7 @@ function popLoad2(){
     status2 = 1;
   }
 }
-
+/*
 //Chargers Popup Off w/ Fadeout
 function popOff(){
   if(status==1){
@@ -78,7 +78,7 @@ function popOff(){
     $("#popUp2").fadeOut("slow");
     status2 = 0;
   }
-}
+} */
 
 //Center Win Popup
 /* function popupPos(){
@@ -134,7 +134,7 @@ function tossHeads() {
     //$(".gouser").text("Go " + userTeam.toUpperCase() + "!");
 };
 
-function tossTails() {
+/* function tossTails() {
     coinToss = Math.floor(Math.random() * 100);
     userCoin = "tails";
 
@@ -158,11 +158,17 @@ function tossTails() {
       $(".rdy").text("THAT MEANS U GON KICKOFF");
     }
 
-};
+}; */
 
 function receiveLeft() {
   $('#preGame').fadeOut('fast');
-  $('#gameBG').fadeIn(3500)
+  $('#gameBG').fadeIn(3500);
+  $('#playerRun').fadeIn(3500);
+  $("#playerRun").animate({
+    opacity:'1',
+    left:'20%',
+  }, 2000, 'linear');
+
 }
 
 
