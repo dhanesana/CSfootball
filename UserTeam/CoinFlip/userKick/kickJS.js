@@ -297,6 +297,7 @@ function userGame2() {
 
 function finishLeft() {
   //fade out usergame
+  $(document).unbind();
   $('#oppball').fadeOut(1);
   $('#lol').fadeOut(1);
   $('#keep').fadeOut(1);
@@ -319,6 +320,7 @@ function finishLeft() {
 
 function finishRight() {
   //fade out usergame
+  $(document).unbind();
   $('#oppball').fadeOut(1);
   $('#lol').fadeOut(1);
   $('#keep').fadeOut(1);
