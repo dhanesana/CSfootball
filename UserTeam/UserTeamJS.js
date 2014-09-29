@@ -96,13 +96,16 @@ function popupPos2(){
 }
 
 function getuserTeam() {
-  userTeam = document.teamform.response.value.toLowerCase();
-  // Create cookie to save userTeam
-  document.cookie=userTeam;
+  userTeam = document.teamform.response.value.toLowerCase(),
+    // Store userTeam as Local Var
+    localStorage.removeItem("opps");
+    localStorage.removeItem("userTeam");
+    localStorage.setItem("userTeam", userTeam);
 
 
     if (userTeam == "seattle seahawks" || userTeam == "seahawks") {
       opps = "CHARGERS";
+      localStorage.setItem("opps", opps);
       $(".inpopUp").text("U GON PLAY THE " + opps.toUpperCase() + "!");
       popupPos();
       popLoad();
@@ -113,6 +116,7 @@ function getuserTeam() {
     $("#errormsg").text("TOO LONG! LIMIT: 20 CHARS'");
   } else {
       opps = "SEAHAWKS";
+      localStorage.setItem("opps", opps);
       $(".inpopUp").text("U GON PLAY THE " + opps.toUpperCase() + "!");
       popupPos2();
       popLoad2();
